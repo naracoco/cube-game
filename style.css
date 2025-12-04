@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: system-ui, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+#ui {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.7);
+  padding: 12px;
+  border-radius: 10px;
+  width: 220px;
+  z-index: 10;
+}
+
+#ui label {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+#ui select, #ui button {
+  width: 100%;
+  margin-top: 4px;
+  padding: 6px;
+}
+
+#status {
+  margin-top: 10px;
+  font-size: 13px;
+  min-height: 40px;
+}
+
+#canvasContainer {
+  width: 100vw;
+  height: 100vh;
+}
