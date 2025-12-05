@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Cube Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- THREE.js 本体 -->
+  <script src="https://unpkg.com/three@0.158.0/build/three.min.js"></script>
+
+  <!-- OrbitControls -->
+  <script src="https://unpkg.com/three@0.158.0/examples/js/controls/OrbitControls.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="ui">
+    <label>
+      モード
+      <select id="gameMode">
+        <option value="mode1">① 角で3面連動</option>
+        <option value="mode2">② 6面独立</option>
+      </select>
+    </label>
+
+    <label>
+      勝利条件
+      <select id="winRule">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+      </select>
+    </label>
+
+    <label>
+      角ペナルティ選択
+      <select id="aiSelect">
+        <option value="0">＋X / －X</option>
+        <option value="1">＋Y / －Y</option>
+        <option value="2">＋Z / －Z</option>
+      </select>
+    </label>
+
+    <button id="newBtn">新しいゲーム</button>
+    <div id="status"></div>
+  </div>
+
+  <div id="canvasContainer"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
